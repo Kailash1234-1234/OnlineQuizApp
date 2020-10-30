@@ -42,7 +42,6 @@ if (!(isset($_SESSION['email']))) {
 }
 ?>
 </div></div><!-- admin start-->
-
 <!--navigation menu-->
 <nav class="navbar navbar-default title1">
   <div class="container-fluid">
@@ -54,7 +53,6 @@ if (!(isset($_SESSION['email']))) {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="dashboard.php?q=0"><b>Dashboard</b></a>
     </div>
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -63,7 +61,7 @@ if (!(isset($_SESSION['email']))) {
         <li <?php if ($_GET['q']==1) echo'class="active"'; ?>><a href="dashboard.php?q=1">User</a></li>
         <li <?php if ($_GET['q']==2) echo'class="active"'; ?>><a href="dashboard.php?q=2">Ranking</a></li>
         <li <?php if ($_GET['q']==3) echo'class="active"'; ?>><a href="dashboard.php?q=3">Feedback</a></li>
-        <li class="dropdown <?php if ($_GET['q']==4 || @$_GET['q']==5) echo'active"'; ?>">
+        <li class="dropdown <?php if ($_GET['q']==4 || $_GET['q']==5) echo'active"'; ?>">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Quiz<span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="dashboard.php?q=4">Add Quiz</a></li>

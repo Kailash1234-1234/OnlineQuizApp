@@ -16,17 +16,6 @@ min-height:540px;
 background:url(../image/quizlogo.png);
 min-height:535px;
 }
-
-@font-face {
-   font-family: 'typo';
-    src: url('../fonts/typo.ttf');
-	}
-
-@font-face {
-   font-family: 'gothic';
-    src: url('../fonts/gothics.ttf');
-	}
-
 .panel{
 border-color:#eee;
 margin:40px;
